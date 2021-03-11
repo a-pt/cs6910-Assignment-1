@@ -1,2 +1,2 @@
 # cs7015
-Deep Learning [CS20M005,CS20M016]
+CS7015 Deep Learning [CS20M005,CS20M016]

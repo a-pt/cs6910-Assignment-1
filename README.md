@@ -9,7 +9,7 @@ Optimizers               :Stochastic,NAG,Momentum,RMSPorp,Adam,Nadam
 Activation Fucntions     :Sigmoid, Tanh, ReLu
 Initialization           :Random, Xavier
 ```
--Fucntions:
+-Functions:
 -
 *prep_pixels(test_data,train_data)* - Datapreprocessing [Normalization]<br/><br/>
 initialize(string,no_of_input, no_of_hidden_layer, no_of_output,neurons_in_hidden_layer) - Initialize weights and biases with either one of the option(random or xavier) according to the first argument.<br/><br/>

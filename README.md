@@ -60,3 +60,56 @@ Adam.ipynb
 Activation function used is Sigmoid and Softmax is used for the output layer.  The parameter values such as No of Layers,Size of each hidden layer,No of classes and Learning Rate are hardcoded in these implementations to compare the loss function of each of them. These are made flexible enough to incorporate diffrent activations and optimisers in the combined solution file. [Gradient_Descent_Solution[1-7].iypnb]
 
 
+-Best Models
+-
+The best 3 configurations got from hyper parameter search are tested on Mnist dataset for handwritten digits.<br/>
+
+```
+sgd_93.74.iypnb
+
+Configurations-
+Activation Fucntion: ReLu
+Batch size: 64
+Epoch: 5
+Hidden layer size: 12
+Learning Rate: 0.001
+Optimizer: Stochastic GD
+Weight Decay: 0.0005
+Weight Initialisation: Xavier
+Layers: 4
+
+Test Accuracy: 93.74%
+```
+```
+rmsprop_93.53.iypnb
+
+Configurations-
+Activation Fucntion: ReLu
+Batch size: 64
+Epoch: 2
+Hidden layer size: 24
+Learning Rate: 0.001
+Optimizer: RmsProp
+Weight Decay: 0
+Weight Initialisation: Xavier
+Layers: 3
+
+Test Accuracy: 93.53%
+```
+```
+momentum_85.54.iypnb
+
+Configurations-
+Activation Fuction: tanh
+Batch size: 32
+Epoch: 3
+Hidden layer size: 8
+Learning Rate: 0.001
+Optimizer: Momentum
+Weight Decay: 0.0005
+Weight Initialisation: Xavier
+Layers: 3
+
+Test Accuracy: 93.74%
+
+```

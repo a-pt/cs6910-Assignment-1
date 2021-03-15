@@ -3,7 +3,7 @@
 -Gradient_Descent_Solution[1-7].iypnb
 -
 Question 1-7 is implemented in the single file Gradient_Descent_Solution[1-7].iypnb<br/>
-The code implements backpropogation algorithm for feed forward neural network in with the following functionalities.
+The code implements backpropogation algorithm for feed forward neural network on fashion_mnist dataset in with the following functionalities.
 ```
 Optimizers               :Stochastic,NAG,Momentum,RMSPorp,Adam,Nadam
 Activation Fucntions     :Sigmoid, Tanh, ReLu

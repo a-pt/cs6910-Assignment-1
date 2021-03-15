@@ -110,6 +110,6 @@ Weight Decay: 0.0005
 Weight Initialisation: Xavier
 Layers: 3
 
-Test Accuracy: 93.74%
+Test Accuracy: 85.54%
 
 ```

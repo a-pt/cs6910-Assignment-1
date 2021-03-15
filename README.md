@@ -25,6 +25,41 @@ initialize(string,no_of_input, no_of_hidden_layer, no_of_output,neurons_in_hidde
 *adam(Layers,No_of_hidden_neurons,learning_rate,batch_size,epoch,activation_function,initialization,decay_factor)* - Adam.<br/>
 *nadam(Layers,No_of_hidden_neurons,learning_rate,batch_size,epoch,activation_function,initialization,decay_factor)* - Nadam.<br/>
 
+The implementation is linked with wandb and hyper parameter tuning can be done effectively by changing the values of sweep confiiguration in the script. The configuration used for parameter searching are as follows.
+
+```
+'epoch': [3,4,5,10]
+'layers': [4,5,6]
+'hidden_layer_size': [12,24,32,64,128]
+'weight_decay': [0,0.0005,0.05,0.5]
+'learning_rate': [0.001,0.0001]
+'optimizer_fn': ['sgd','momentum','nesterov','rmsprop','adam','nadam']
+'batch_size': [16,32,64,128]
+'weight_initial':['random','xavier']
+'activation_fn': ['sigmoid','tanh','relu']
+```
+
+-Backporpogation- Python Scirpts
+-
+
+The individual pythons scripts for Vanila GD and each of the above optimisation algorithm are added in the following files. 
+```
+VanilaGD.ipynb
+StochasticGD.ipynb
+RmsProp.ipynb
+NesterovGD.ipynb
+Nadam.ipynb
+MomentumGD.ipynb
+Adam.ipynb
+```
+
+Activation function used is Sigmoid and Softmax is used for the output layer.  The parameter values such as No of Layers,Size of each hidden layer,No of classes and Learning Rate are hardcoded in these implementations to compare the loss function of each of them. These are made flexible enough to incorporate diffrent activations and optimisers in the combined solution file. [Gradient_Descent_Solution[1-7].iypnb]
 
 
-       
+
+
+
+
+
+
+     

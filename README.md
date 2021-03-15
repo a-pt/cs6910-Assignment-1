@@ -39,6 +39,10 @@ The implementation is linked with wandb and hyper parameter tuning can be done e
 'activation_fn': ['sigmoid','tanh','relu']
 ```
 
+-CE_vs_SE[8].ipynb
+-
+The Loss comparision for multiclass classification problem Cross Entopy vs Squared error is demostrated in [CE_vs_SE[8].ipynb] file. The comparison of train loss for Vanila Gradient descent trained on a neural network with 3 Layers having 8 neurons in each hidden layer with a learning rate 0.0001 is illustrated.[Question 8]
+
 -Backporpogation- Python Scirpts
 -
 
@@ -56,10 +60,3 @@ Adam.ipynb
 Activation function used is Sigmoid and Softmax is used for the output layer.  The parameter values such as No of Layers,Size of each hidden layer,No of classes and Learning Rate are hardcoded in these implementations to compare the loss function of each of them. These are made flexible enough to incorporate diffrent activations and optimisers in the combined solution file. [Gradient_Descent_Solution[1-7].iypnb]
 
 
-
-
-
-
-
-
-     
